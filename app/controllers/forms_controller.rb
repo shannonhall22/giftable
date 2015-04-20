@@ -5,11 +5,13 @@ class FormsController < ApplicationController
   end
 
   def profile_view
+    @email = params["email"]
+    @password = params["password"]
     render "profile_view"
   end
 
-  def profile_edit_display
-    render "profile_edit_display"
+  def profile_edit_form
+    render "profile_edit_form"
   end
 
   def profile_edit_process
@@ -33,4 +35,29 @@ class FormsController < ApplicationController
 
     render "profile_edit_process"
   end
+
+  def pers_info_form
+    render "pers_info_form"
+  end
+
+  def pers_info_process
+    render "pers_info_process"
+  end
+
+  def profile_pic_form
+    render "profile_pic_form"
+  end
+
+  def profile_pic_process
+    render "profile_pic_process"
+  end
+
+  def special_dates_form
+    render "special_dates_form"
+  end
+
+  def special_dates_process
+    render "special_dates_proces"
+  end
+
 end

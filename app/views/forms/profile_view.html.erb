@@ -1,0 +1,70 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="row">
+      <div class="col-md-1 img-align="right"">
+        <div class="profile_image">
+          <img class="img-responsive img-square" src="https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1549536_10101844295509107_1025404190_n.jpg?oh=bb5195ed84ec5e9c7099a221fdb59a0f&oe=55DC5C3D" alt="profile_picture">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand href="#"><i>Welcome,</i> <%= @first_name %>!</a>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/homepage">Logout</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-primary btn-lg btn-block">Profile</button>
+
+      <br>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block">Calendar</button>
+
+      <br>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block">Gifts</button>
+
+      <br>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block">Friends</button>
+
+      <br>
+
+      <h3>Alerts</h3>
+      <p>Dad's Birthday</p>
+
+    </div>
+
+    <div class="col-md-10">
+      <img class="img-responsive" src="http://i288.photobucket.com/albums/ll191/shannonhall22/calendar_zpsbq5o6mc9.png">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/profile_edit">Edit</a></li>
+        <li class="active"><a href="/profile_view">Save</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Edit Profile</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 align-center">
+      <h3>Profile Picture</h3>
+      <img class="img-responsive center-block" src="http://24.media.tumblr.com/f1096b54d940b11b8a1a51438c0380b3/tumblr_mlepboX7qJ1qfdu3lo1_500.jpg" alt="blankprofile">
+    </div>
+
+    <div class="col-md-7">
+      <div>
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h3>My Information</h3></div>
+
+          <!-- Table -->
+          <table class="table table-condensed">
+            <tr>
+              <td width="200">First Name</td>
+              <td width="*"><%= @first_name %></td>
+            </tr>
+            <tr>
+              <td width="200">Last Name</td>
+              <td width="*"><%= @last_name %></td>
+            </tr>
+            <tr>
+              <td width="200">Address Line 1</td>
+              <td width="*"><%= @address_first %></td>
+            </tr>
+            <tr>
+              <td width="200">Address Line 2</td>
+              <td width="*"><%= @address_second %></td>
+            </tr>
+            <tr>
+              <td width="200">City</td>
+              <td width="*"><%= @city %></td>
+            </tr>
+            <tr>
+              <td width="200">State</td>
+              <td width="*"><%= @state %></td>
+            </tr>
+            <tr>
+              <td width="200">ZIP</td>
+              <td width="*"><%= @zip %></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h3>Special Dates</h3></div>
+
+          <!-- Table -->
+          <table class="table table-condensed">
+            <tr>
+              <td width="200">Birthday</td>
+              <td width="*">
+                <%= @birthday_month %>
+                <%= @birthday_day %>,
+                <%= @birthday_year %>
+              </td>
+            </tr>
+            <tr>
+              <td width="200">Anniversary</td>
+              <td width="*">
+                <%= @anniversary_month %>
+                <%= @anniversary_day %>,
+                <%= @anniversary_year %>
+              </td>
+            </tr>
+            <tr>
+              <td width="200"><%= @other %></td>
+              <td width="*">
+                <%= @other_month %>
+                <%= @other_day %>,
+                <%= @other_year %>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

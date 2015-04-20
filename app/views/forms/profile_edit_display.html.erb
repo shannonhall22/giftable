@@ -1,0 +1,104 @@
+<form action="profile_edited">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="homepage">Cancel</a></li>
+          <li class="active"><input type="submit"</li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Edit Profile</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 align-center">
+        <h3>Profile Picture</h3>
+        <img class="img-responsive center-block" src="http://24.media.tumblr.com/f1096b54d940b11b8a1a51438c0380b3/tumblr_mlepboX7qJ1qfdu3lo1_500.jpg" alt="blankprofile">
+      </div>
+
+      <div class="col-md-7">
+        <div>
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h3>My Information</h3></div>
+
+            <!-- Table -->
+            <table class="table table-condensed">
+              <tr>
+                <td width="200">First Name</td>
+                <td width="*"><input id="first_name" type="text" name="first_name" size="75" placeholder="Jane"></td>
+              </tr>
+              <tr>
+                <td width="200">Last Name</td>
+                <td width="*"><input id="last_name" type="text" name="last_name" size="75" placeholder="Doe"></td>
+              </tr>
+              <tr>
+                <td width="200">Address Line 1</td>
+                <td width="*"><input id="address_first" type="text" name="address_first" size="75" placeholder="123 Main St."></td>
+              </tr>
+              <tr>
+                <td width="200">Address Line 2</td>
+                <td width="*"><input id="address_second" type="text" name="address_second" size="75" placeholder="Apt. 1"></td>
+              </tr>
+              <tr>
+                <td width="200">City</td>
+                <td width="*"><input id="city" type="text" name="city" size="75" placeholder="Chicago"></td>
+              </tr>
+              <tr>
+                <td width="200">State</td>
+                <td width="*"><input id="state" type="text" name="state" size="75" placeholder="Illinois"></td>
+              </tr>
+              <tr>
+                <td width="200">ZIP</td>
+                <td width="*"><input id="zip" type="text" name="zip" size="75" placeholder="60654"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h3>Special Dates</h3></div>
+
+            <!-- Table -->
+            <table class="table table-condensed">
+              <tr>
+                <td width="200">Birthday</td>
+                <td width="*">
+                  <input id="birthday_month" type="text" name="birthday_month" placeholder="January">
+                  <input id="birthday_day" type="text" name="birthday_day" placeholder="1" size="3">,
+                  <input id="birthday_year" type="text" name="birthday_year" placeholder="2015">
+                </td>
+              </tr>
+              <tr>
+                <td width="200">Anniversary</td>
+                <td width="*">
+                  <input id="anniversary_month" type="text" name="anniversary_month" placeholder="January">
+                  <input id="anniversary_day" type="text" name="anniversary_day" placeholder="1" size="3">,
+                  <input id="anniversary_year" type="text" name="anniversary_year" placeholder="2015">
+                </td>
+              </tr>
+              <tr>
+                <td width="200">Other:  <input id="other" type="text" name="other" placeholder="Graduation" size="15"></td>
+                <td width="*">
+                  <input id="other_month" type="text" name="other_month" placeholder="January">
+                  <input id="other_day" type="text" name="other_day" placeholder="1" size="3">,
+                  <input id="other_year" type="text" name="other_year" placeholder="2015">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

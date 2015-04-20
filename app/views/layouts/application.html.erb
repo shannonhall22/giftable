@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giftable</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+
+  <style>
+
+  .login {
+    margin-top: 8px;
+  }
+
+  .friends {
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+
+  .profile_image {
+    max-height: 40px;
+    max-width: 40px;
+    }
+
+  .col-md-2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+  .col-md-5 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+  .active {
+    vertical-align: center
+  }
+  </style>
+
+
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

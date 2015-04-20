@@ -72,3 +72,32 @@
     </div>
   </div>
 </div>
+
+
+
+<table class="table table-condensed">
+            <tr>
+              <td width="200">Birthday</td>
+              <td width="*">
+                <%= @birthday_month %>
+                <%= @birthday_day %>,
+                <%= @birthday_year %>
+              </td>
+            </tr>
+            <tr>
+              <td width="200">Anniversary</td>
+              <td width="*">
+                <%= @anniversary_month %>
+                <%= @anniversary_day %>,
+                <%= @anniversary_year %>
+              </td>
+            </tr>
+            <tr>
+              <td width="200"><%= @other %></td>
+              <td width="*">
+                <%= @other_month %>
+                <%= @other_day %>,
+                <%= @other_year %>
+              </td>
+            </tr>
+          </table>

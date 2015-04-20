@@ -1,102 +1,68 @@
-<nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/profile_edit">Edit</a></li>
-        <li class="active"><a href="/profile_view">Save</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+<form action="profile_edited">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><i class="fa fa-pencil"></i> Edit Profile</a>
+      </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Edit Profile</h1>
-    </div>
-  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
 
-  <div class="row">
-    <div class="col-md-5 align-center">
-      <h3>Profile Picture</h3>
-      <img class="img-responsive center-block" src="http://24.media.tumblr.com/f1096b54d940b11b8a1a51438c0380b3/tumblr_mlepboX7qJ1qfdu3lo1_500.jpg" alt="blankprofile">
-    </div>
 
-    <div class="col-md-7">
-      <div>
-        <div class="panel panel-default">
-          <!-- Default panel contents -->
-          <div class="panel-heading"><h3>My Information</h3></div>
+        </ul>
 
-          <!-- Table -->
-          <table class="table table-condensed">
-            <tr>
-              <td width="200">First Name</td>
-              <td width="*"><%= @first_name %></td>
-            </tr>
-            <tr>
-              <td width="200">Last Name</td>
-              <td width="*"><%= @last_name %></td>
-            </tr>
-            <tr>
-              <td width="200">Address Line 1</td>
-              <td width="*"><%= @address_first %></td>
-            </tr>
-            <tr>
-              <td width="200">Address Line 2</td>
-              <td width="*"><%= @address_second %></td>
-            </tr>
-            <tr>
-              <td width="200">City</td>
-              <td width="*"><%= @city %></td>
-            </tr>
-            <tr>
-              <td width="200">State</td>
-              <td width="*"><%= @state %></td>
-            </tr>
-            <tr>
-              <td width="200">ZIP</td>
-              <td width="*"><%= @zip %></td>
-            </tr>
-          </table>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="homepage">Cancel</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item"><i class="fa fa-envelope-o"></i> User Information</a>
+          <a href="profile_pic" class="list-group-item"><i class="fa fa-camera"></i> Profile Picture</a>
+          <a href="pers_info" class="list-group-item"><i class="fa fa-user"></i> Personal Information</a>
+          <a href="special_dates" class="list-group-item"><i class="fa fa-calendar"></i> Special Dates</a>
         </div>
       </div>
 
-      <div>
+      <div class="col-md-9">
         <div class="panel panel-default">
-          <!-- Default panel contents -->
-          <div class="panel-heading"><h3>Special Dates</h3></div>
-
-          <!-- Table -->
-          <table class="table table-condensed">
-            <tr>
-              <td width="200">Birthday</td>
-              <td width="*">
-                <%= @birthday_month %>
-                <%= @birthday_day %>,
-                <%= @birthday_year %>
-              </td>
-            </tr>
-            <tr>
-              <td width="200">Anniversary</td>
-              <td width="*">
-                <%= @anniversary_month %>
-                <%= @anniversary_day %>,
-                <%= @anniversary_year %>
-              </td>
-            </tr>
-            <tr>
-              <td width="200"><%= @other %></td>
-              <td width="*">
-                <%= @other_month %>
-                <%= @other_day %>,
-                <%= @other_year %>
-              </td>
-            </tr>
-          </table>
+          <div class="panel-heading">
+            <h3 class="panel-title">User Information</h3>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+

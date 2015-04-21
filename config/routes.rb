@@ -5,15 +5,6 @@ Rails.application.routes.draw do
   get("/profile_edit", {:controller => "forms", :action => "profile_edit_form"})
   get("/profile_edited", {:controller => "forms", :action => "profile_edit_process"})
 
-  get("/pers_info", {:controller => "forms", :action => "pers_info_form"})
-  get("/pers_info_process", {:controller => "forms", :action => "pers_info_process"})
-
-  get("/profile_pic", {:controller => "forms", :action => "profile_pic_form"})
-  get("/profile_pic_process", {:controller => "forms", :action => "profile_pic_process"})
-
-  get("/special_dates", {:controller => "forms", :action => "special_dates_form"})
-  get("/special_dates_process", {:controller => "forms", :action => "special_dates_process"})
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

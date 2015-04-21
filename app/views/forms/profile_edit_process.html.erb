@@ -1,0 +1,194 @@
+<form action="profile_edited">
+  <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand active" href="#">Edit Profile</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item"><i class="fa fa-envelope-o"></i> User Information</a>
+          <a href="profile_pic" class="list-group-item"><i class="fa fa-camera"></i> Profile Picture</a>
+          <a href="pers_info" class="list-group-item"><i class="fa fa-user"></i> Personal Information</a>
+          <a href="special_dates" class="list-group-item"><i class="fa fa-calendar"></i> Special Dates</a>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="panel-title">User Information </h3>
+              </div>
+              <div class="edit" class="col-md-6">
+                <a href="profile_edit_form" text-align="right">Edit</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">E-mail</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @email %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static">************</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="panel-title">Profile Picture </h3>
+              </div>
+              <div class="edit" class="col-md-6">
+                <a href="profile_edit_form" text-align="right">Edit</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div>
+              <img class="img-responsive center-block profile_image" src="http://24.media.tumblr.com/f1096b54d940b11b8a1a51438c0380b3/tumblr_mlepboX7qJ1qfdu3lo1_500.jpg" alt="blankprofile">
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="panel-title">Personal Information </h3>
+              </div>
+              <div class="edit" class="col-md-6">
+                <a href="profile_edit_form" text-align="right">Edit</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="first_name" class="col-sm-2 control-label">First Name</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @first_name %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="last_name" class="col-sm-2 control-label">Last Name</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @last_name %></p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="address_first" class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @address_first %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address_second" class="col-sm-2 control-label">Address Cont.</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @address_second %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="city" class="col-sm-2 control-label">City</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @city %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="state" class="col-sm-2 control-label">State</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @state %></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="zip" class="col-sm-2 control-label">ZIP</label>
+                <div class="col-sm-10">
+                  <p class="form-control-static"><%= @zip %></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="panel-title special_dates">Special Dates </h3>
+              </div>
+              <div class="edit" class="col-md-6">
+                <a href="profile_edit_form" text-align="right">Edit</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-inline">
+                  <label for="birthday" class="col-sm-2 control-label">Birthday</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static"><%= @birthday %></p>
+                    <p class="form-control-static"><%= @birthday_day %></p>
+                    <p class="form-control-static"><%= @birthday_year %></p>
+                  </div>
+                </div>
+                <div class="form-inline">
+                  <label for="anniversary" class="col-sm-2 control-label">Anniversary</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static"><%= @anniversary %></p>
+                    <p class="form-control-static"><%= @anniversary_day %></p>
+                    <p class="form-control-static"><%= @anniversary_year %></p>
+                  </div>
+                </div>
+                <div class="form-inline">
+                  <label for="other" class="col-sm-2 control-label">Other</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static"><%= @other %></p>
+                    <p class="form-control-static"><%= @other_day %></p>
+                    <p class="form-control-static"><%= @other_year %></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,19 +2,7 @@
   <div class="container-fluid">
 
     <ul class="nav navbar-nav navbar-right">
-      <div class="login"></div>
-      <form class="form-inline">
-        <div class="form-group">
-          <input type="email" class="form-control" id="email_old" name="email" placeholder="E-mail">
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" id="password_old" name="password" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-default">
-          <a href="profile_view">Login</a>
-        </button>
-      </form>
-    </div>
+
   </ul>
 </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
@@ -34,6 +22,21 @@
     </div>
 
     <div class="col-md-6">
+      <h3>Sign In</h3>
+
+      <div class="login"></div>
+      <form class="form-inline">
+        <div class="form-group">
+          <input type="email" class="form-control" id="email_old" name="email" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password_old" name="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">
+          <a href="profile_view">Login</a>
+        </button>
+      </form>
+
 
       <h3>Sign Up</h3>
       <br>
@@ -42,16 +45,7 @@
       <br>
       <p>-OR-</p>
       <br>
-      <form>
-        <div action="profile_edit" class="form-group">
-          <label for="email_new">Email address</label>
-          <input type="email" class="form-control" id="email_new" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <label for="password_new">Password</label>
-          <input type="password" class="form-control" id="password_new" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-default"><a href="profile_edited">Submit</a></button>
-      </form>
+      <button type="submit" class="btn btn-default"><a href="profile_edit"><i class="fa fa-envelope-o"></i> E-mail</a></button>
+
     </div>
   </div>

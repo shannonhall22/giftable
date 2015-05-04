@@ -1,10 +1,24 @@
 Rails.application.routes.draw do
 
-  get("/homepage", {:controller => "forms", :action => "homepage"})
-  get("/profile_view", {:controller => "forms", :action => "profile_view"})
-  get("/profile_edit_form", {:controller => "forms", :action => "profile_edit_form"})
-  get("/profile_edit_process", {:controller => "forms", :action => "profile_edit_process"})
-  get("/personal_information_form", {:controller => "forms", :action => "personal_information_form"})
+  #CREATE
+    get("/homepage", {:controller => "forms", :action => "homepage"})
+    get("/personal_information_form", {:controller => "forms", :action => "personal_information_form"})
+
+  #READ
+    get("/profile_view", {:controller => "forms", :action => "profile_view"})
+
+  #UPDATE
+    get("/profile_edit_form", {:controller => "forms", :action => "profile_edit_form"})
+    get("/profile_edit_process", {:controller => "forms", :action => "profile_edit_process"})
+
+
+  #DESTROY
+
+
+
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

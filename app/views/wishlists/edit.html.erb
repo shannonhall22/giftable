@@ -1,0 +1,86 @@
+<!-- Validation failure messages -->
+
+<% if @wishlist.errors.any? %>
+  <% @wishlist.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<!-- Responsive panel example -->
+
+<div class="row">
+  <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Edit Wishlist #<%= @wishlist.id %></h3>
+      </div>
+      <div class="panel-body">
+        <%= form_tag wishlist_url(@wishlist.id), :method => "patch", :class => "form-horizontal" do %>
+          <!-- Label and input for name -->
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">
+              Name
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="name" name="name" placeholder="Name" class="form-control" value="<%= @wishlist.name %>">
+            </div>
+          </div>
+
+          <!-- Label and input for website -->
+          <div class="form-group">
+            <label for="website" class="col-sm-2 control-label">
+              Website
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="website" name="website" placeholder="Website" class="form-control" value="<%= @wishlist.website %>">
+            </div>
+          </div>
+
+          <!-- Label and input for price -->
+          <div class="form-group">
+            <label for="price" class="col-sm-2 control-label">
+              Price
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="price" name="price" placeholder="Price" class="form-control" value="<%= @wishlist.price %>">
+            </div>
+          </div>
+
+          <!-- Label and input for image_url -->
+          <div class="form-group">
+            <label for="image_url" class="col-sm-2 control-label">
+              Image url
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="image_url" name="image_url" placeholder="Image url" class="form-control" value="<%= @wishlist.image_url %>">
+            </div>
+          </div>
+
+          <!-- Label and input for user_id -->
+          <div class="form-group">
+            <label for="user_id" class="col-sm-2 control-label">
+              User
+            </label>
+            <div class="col-sm-10">
+              <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @wishlist.user_id %>">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <input type="submit" value="Update Wishlist" class="btn btn-warning">
+              or
+              <%= link_to "Cancel", wishlist_url(@wishlist.id) %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End responsive panel example -->
